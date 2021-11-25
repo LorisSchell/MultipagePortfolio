@@ -1,11 +1,777 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>Homepage</title>
+    <script src="./js/club.js"></script>
+    <script src="./js/formular.js"></script>
+    <link rel="stylesheet" href="./css/clubnav.css">
   </head>
   <body>
-    <button onclick="pressed()">Button</button>
-    <button id="btn2">Button2</button>
-    <script src="./js/formular.js"></script>
+    <nav></nav>
+
+    <header>
+      <nav class="clubNavigation" data-script="pl_global-header" role="menubar">
+        <div class="clubSitesHeading">
+          <h4>Club Sites:</h4>
+        </div>
+        
+        <ul class="clubList" role="menu">
+          <li>
+            <a
+              target="_blank"
+              href="http://www.arsenal.com?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t3.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t3@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t3.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t3@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Arsenal</span>
+              </div>
+              <span class="name">Arsenal</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.avfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t7.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t7@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t7.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t7@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Aston Villa</span>
+              </div>
+              <span class="name">Aston Villa</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.brentfordfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t94.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t94@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t94.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t94@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Brentford</span>
+              </div>
+              <span class="name">Brentford</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.brightonandhovealbion.com?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t36.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t36@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t36.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t36@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Brighton &amp; Hove Albion</span>
+              </div>
+              <span class="name">Brighton &amp; Hove Albion</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t90.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t90@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t90.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t90@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Burnley</span>
+              </div>
+              <span class="name">Burnley</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.chelseafc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t8.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t8@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t8.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t8@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Chelsea</span>
+              </div>
+              <span class="name">Chelsea</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.cpfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t31.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t31@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t31.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t31@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Crystal Palace</span>
+              </div>
+              <span class="name">Crystal Palace</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.evertonfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t11.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t11@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t11.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t11@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Everton </span>
+              </div>
+              <span class="name">Everton </span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.leedsunited.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t2.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t2@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t2.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t2@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Leeds United</span>
+              </div>
+              <span class="name">Leeds United</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.lcfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t13.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t13@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t13.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t13@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Leicester City</span>
+              </div>
+              <span class="name">Leicester City</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.liverpoolfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t14.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t14@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t14.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t14@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Liverpool</span>
+              </div>
+              <span class="name">Liverpool</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.mancity.com?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t43.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t43@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t43.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t43@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Manchester City</span>
+              </div>
+              <span class="name">Manchester City</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.manutd.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t1.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t1@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t1.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t1@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Manchester United</span>
+              </div>
+              <span class="name">Manchester United</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.nufc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t4.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t4@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t4.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t4@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Newcastle United</span>
+              </div>
+              <span class="name">Newcastle United</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.canaries.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t45.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t45@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t45.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t45@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Norwich City</span>
+              </div>
+              <span class="name">Norwich City</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.southamptonfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t20.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t20@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t20.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t20@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Southampton</span>
+              </div>
+              <span class="name">Southampton</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t6.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t6@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t6.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t6@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Tottenham Hotspur</span>
+              </div>
+              <span class="name">Tottenham Hotspur</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href=" https://www.watfordfc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t57.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t57@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t57.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t57@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Watford</span>
+              </div>
+              <span class="name">Watford</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.whufc.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t21.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t21@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t21.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t21@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">West Ham United</span>
+              </div>
+              <span class="name">West Ham United</span>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.wolves.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link"
+              role="menuitem"
+            >
+              <div
+                class="badge badge--small badge-image-container"
+                data-widget="club-badge-image"
+                data-size="25"
+              >
+                <img
+                  class="badge-image badge-image--25 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/25/t39.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/25/t39@x2.png 2x
+                  "
+                />
+              </div>
+              <div
+                class="badge badge--large badge-image-container"
+                data-widget="club-badge-image"
+                data-size="50"
+              >
+                <img
+                  class="badge-image badge-image--50 js-badge-image"
+                  src="https://resources.premierleague.com/premierleague/badges/50/t39.png"
+                  srcset="
+                    https://resources.premierleague.com/premierleague/badges/50/t39@x2.png 2x
+                  "
+                />
+                <span class="visuallyHidden">Wolverhampton Wanderers</span>
+              </div>
+              <span class="name">Wolverhampton Wanderers</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <h2>Artikel 1</h2>
+      <button onclick="pressed()">Button</button>
+      <button id="btn2">Button2</button> 
+    </article>
+
+    <article>
+      <h2>Artikel 2</h2>
+      <section>
+        <p>Text of Artikel 2 in first section</p>
+        <p>Text of Artikel 2 in first section</p>
+      </section>
+      <section>
+        <p>Text of Artikel 2 in second section</p>
+        <ol>
+          <li>Element 1 of List 1</li>
+          <li>Element 2 of List 1</li>
+          <li>Element 3 of List 1</li>
+        </ol>
+        <p>Text of Artikel 2 in second section</p>
+      </section>
+    </article>
+
+    <figure>
+      <img
+        src="https://www.monotype.com/sites/monotype/files/2019-10/premierleague-hero-new.png"
+      />
+    </figure>
+
+    <footer>
+      <p>&copy; 2021 by Loris Schell</p>
+    </footer>
   </body>
 </html>

@@ -3,6 +3,6 @@ function pressed() {
 }
 
 var btn2 = document.getElementById("btn2");
-btn2.addEventListener("click", function () {
+btn2.addEventListener("", function () {
   console.log("btn2 gedrückt");
 });
