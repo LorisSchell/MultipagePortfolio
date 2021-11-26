@@ -5,6 +5,7 @@
 
 body, html {
   height: 100%;
+  background-color: white;
   font-size: 28px;
   font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -12,7 +13,7 @@ body, html {
 ul#navbar {
   list-style-type: none;
   padding: 0;
-  margin-top: -15px; /*remove if div-Container on top*/
+  margin-top: -15px;
   margin-left: -10px;
   margin-right: -10px;
   overflow: hidden;
@@ -46,6 +47,8 @@ div.background-image {
   background-image: url("http://127.0.0.1:5500/public/images/css-background.png"); /* FIXME: adress changing depending on server*/
   
   height: 40%;
+  margin: -10px;
+  margin-top: -21px;
 
   background-position: center;
   background-repeat: no-repeat;
