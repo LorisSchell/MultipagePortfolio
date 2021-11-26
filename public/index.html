@@ -2,14 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Homepage</title>
+
     <script src="./js/club.js"></script>
     <script src="./js/formular.js"></script>
-    <link rel="stylesheet" href="./css/clubnav.css">
+
+    <link rel="stylesheet" href="./css/clubnav.css" />
   </head>
   <body>
-    <nav></nav>
+    <!--
+    <div class="header">
+      <h2>Scroll Down</h2>
+      <p>Scroll down to see the sticky effect.</p>
+    </div>
+    -->
+    <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="inactive" href="table.html">Table</a></li>
+    </ul> 
+    <div class="background-image">
+      
+    </div>
+    <div>
+      <header class="info">
+        <h1>What's this website about ?</h1>
+        <p>This web page represents my portfolio exam of the Advanced Systems Development course. The task was to create a small multipage website using all the tags used during the lectures, modify them with CSS rules and make them dynamic using JavaScript.</p>
+        <p>Since there are no guidelines about a theme I decided to create a website about the Premiere League, because I am a soccer fan of Manchester City myself. Since there are no guidelines about a theme I decided to create a website about the Premiere League, because I am a football fan of Manchester City myself.</p>
+      </header>
+      <div>
+        <article>
+          <h2>What is the Premier League?</h2>
+          <section></section>
+        </article>
+      </div>
+      <h2>Fixed Full-height Side Nav</h2>
+      <h3>
+        Try to scroll this area, and see how the sidenav sticks to the page
+      </h3>
+      <p>
+        Notice that this div element has a left margin of 25%. This is because
+        the side navigation is set to 25% width. If you remove the margin, the
+        sidenav will overlay/sit on top of this div.
+      </p>
+      <p>
+        Also notice that we have set overflow:auto to sidenav. This will add a
+        scrollbar when the sidenav is too long (for example if it has over 50
+        links inside of it).
+      </p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
 
+    <!--
     <header>
       <nav class="clubNavigation" data-script="pl_global-header" role="menubar">
         <div class="clubSitesHeading">
@@ -31,9 +124,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t3.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t3@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t3@x2.png 2x"
                 />
               </div>
               <div
@@ -44,9 +135,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t3.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t3@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t3@x2.png 2x"
                 />
                 <span class="visuallyHidden">Arsenal</span>
               </div>
@@ -67,9 +156,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t7.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t7@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t7@x2.png 2x"
                 />
               </div>
               <div
@@ -80,9 +167,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t7.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t7@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t7@x2.png 2x"
                 />
                 <span class="visuallyHidden">Aston Villa</span>
               </div>
@@ -103,9 +188,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t94.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t94@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t94@x2.png 2x"
                 />
               </div>
               <div
@@ -116,9 +199,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t94.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t94@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t94@x2.png 2x"
                 />
                 <span class="visuallyHidden">Brentford</span>
               </div>
@@ -139,9 +220,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t36.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t36@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t36@x2.png 2x"
                 />
               </div>
               <div
@@ -152,9 +231,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t36.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t36@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t36@x2.png 2x"
                 />
                 <span class="visuallyHidden">Brighton &amp; Hove Albion</span>
               </div>
@@ -175,9 +252,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t90.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t90@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t90@x2.png 2x"
                 />
               </div>
               <div
@@ -188,9 +263,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t90.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t90@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t90@x2.png 2x"
                 />
                 <span class="visuallyHidden">Burnley</span>
               </div>
@@ -211,9 +284,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t8.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t8@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t8@x2.png 2x"
                 />
               </div>
               <div
@@ -224,9 +295,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t8.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t8@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t8@x2.png 2x"
                 />
                 <span class="visuallyHidden">Chelsea</span>
               </div>
@@ -247,9 +316,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t31.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t31@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t31@x2.png 2x"
                 />
               </div>
               <div
@@ -260,9 +327,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t31.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t31@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t31@x2.png 2x"
                 />
                 <span class="visuallyHidden">Crystal Palace</span>
               </div>
@@ -283,9 +348,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t11.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t11@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t11@x2.png 2x"
                 />
               </div>
               <div
@@ -296,9 +359,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t11.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t11@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t11@x2.png 2x"
                 />
                 <span class="visuallyHidden">Everton </span>
               </div>
@@ -319,9 +380,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t2.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t2@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t2@x2.png 2x"
                 />
               </div>
               <div
@@ -332,9 +391,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t2.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t2@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t2@x2.png 2x"
                 />
                 <span class="visuallyHidden">Leeds United</span>
               </div>
@@ -355,9 +412,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t13.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t13@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t13@x2.png 2x"
                 />
               </div>
               <div
@@ -368,9 +423,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t13.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t13@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t13@x2.png 2x"
                 />
                 <span class="visuallyHidden">Leicester City</span>
               </div>
@@ -391,9 +444,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t14.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t14@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t14@x2.png 2x"
                 />
               </div>
               <div
@@ -404,9 +455,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t14.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t14@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t14@x2.png 2x"
                 />
                 <span class="visuallyHidden">Liverpool</span>
               </div>
@@ -427,9 +476,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t43.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t43@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t43@x2.png 2x"
                 />
               </div>
               <div
@@ -440,9 +487,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t43.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t43@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t43@x2.png 2x"
                 />
                 <span class="visuallyHidden">Manchester City</span>
               </div>
@@ -463,9 +508,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t1.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t1@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t1@x2.png 2x"
                 />
               </div>
               <div
@@ -476,9 +519,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t1.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t1@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t1@x2.png 2x"
                 />
                 <span class="visuallyHidden">Manchester United</span>
               </div>
@@ -499,9 +540,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t4.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t4@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t4@x2.png 2x"
                 />
               </div>
               <div
@@ -512,9 +551,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t4.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t4@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t4@x2.png 2x"
                 />
                 <span class="visuallyHidden">Newcastle United</span>
               </div>
@@ -535,9 +572,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t45.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t45@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t45@x2.png 2x"
                 />
               </div>
               <div
@@ -548,9 +583,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t45.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t45@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t45@x2.png 2x"
                 />
                 <span class="visuallyHidden">Norwich City</span>
               </div>
@@ -571,9 +604,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t20.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t20@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t20@x2.png 2x"
                 />
               </div>
               <div
@@ -584,9 +615,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t20.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t20@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t20@x2.png 2x"
                 />
                 <span class="visuallyHidden">Southampton</span>
               </div>
@@ -607,9 +636,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t6.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t6@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t6@x2.png 2x"
                 />
               </div>
               <div
@@ -620,9 +647,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t6.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t6@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t6@x2.png 2x"
                 />
                 <span class="visuallyHidden">Tottenham Hotspur</span>
               </div>
@@ -643,9 +668,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t57.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t57@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t57@x2.png 2x"
                 />
               </div>
               <div
@@ -656,9 +679,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t57.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t57@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t57@x2.png 2x"
                 />
                 <span class="visuallyHidden">Watford</span>
               </div>
@@ -679,9 +700,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t21.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t21@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t21@x2.png 2x"
                 />
               </div>
               <div
@@ -692,9 +711,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t21.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t21@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t21@x2.png 2x"
                 />
                 <span class="visuallyHidden">West Ham United</span>
               </div>
@@ -715,9 +732,7 @@
                 <img
                   class="badge-image badge-image--25 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/25/t39.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/25/t39@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/25/t39@x2.png 2x"
                 />
               </div>
               <div
@@ -728,9 +743,7 @@
                 <img
                   class="badge-image badge-image--50 js-badge-image"
                   src="https://resources.premierleague.com/premierleague/badges/50/t39.png"
-                  srcset="
-                    https://resources.premierleague.com/premierleague/badges/50/t39@x2.png 2x
-                  "
+                  srcset="https://resources.premierleague.com/premierleague/badges/50/t39@x2.png 2x"
                 />
                 <span class="visuallyHidden">Wolverhampton Wanderers</span>
               </div>
@@ -740,7 +753,9 @@
         </ul>
       </nav>
     </header>
+    -->
 
+    <!-- 
     <article>
       <h2>Artikel 1</h2>
       <button onclick="pressed()">Button</button>
@@ -767,9 +782,10 @@
     <figure>
       <img
         src="https://www.monotype.com/sites/monotype/files/2019-10/premierleague-hero-new.png"
+        alt=""
       />
     </figure>
-
+    -->
     <footer>
       <p>&copy; 2021 by Loris Schell</p>
     </footer>

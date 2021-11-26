@@ -3,10 +3,61 @@
   width: 100%;
 }
 
-nav.clubNavigation li {
-    display: inline;
+body, html {
+  height: 100%;
+  font-size: 28px;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
+ul#navbar {
+  list-style-type: none;
+  padding: 0;
+  margin-top: -15px; /*remove if div-Container on top*/
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow: hidden;
+  background-color: #212529;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+ul#navbar li {
+  float: left;
+}
+
+ul#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul#navbar li a.inactive {
+  color: grey;
+}
+
+ul#navbar li a.inactive:hover {
+  color: white;
+}
+
+div.background-image {
+  background-image: url("http://127.0.0.1:5500/public/images/css-background.png"); /* FIXME: adress changing depending on server*/
+  
+  height: 40%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header.info {
+  background-color: grey;
+}
+
+
+/*
 @media only screen and (max-width: 768px) {
   .badge.badge--large.badge-image-container {
     visibility: hidden;
@@ -18,6 +69,7 @@ nav.clubNavigation li {
       visibility: hidden;
   }
 }
+*/
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -57,6 +109,7 @@ nav.clubNavigation li {
   .col-12 {
     width: 100%;
   }
+  /*
   .badge.badge--small.badge-image-container {
     visibility: hidden;
   }
@@ -66,4 +119,5 @@ nav.clubNavigation li {
   span.name {
       visibility: hidden;
   }
+  */
 }
