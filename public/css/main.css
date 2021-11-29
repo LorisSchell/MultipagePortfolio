@@ -214,7 +214,7 @@ section {
 .nav-link.active::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: -2px;
   bottom: -0.5em;
   width: 100%;
   height: 3px;
@@ -234,6 +234,7 @@ section {
   background-color: currentColor;
   
   transform: scaleX(0);
+  transform-origin: right;
   transition: transform 250ms ease-in;
 
   border-top-left-radius: 2px;
@@ -242,6 +243,7 @@ section {
 
 .nav-link:hover::after {
   transform: scaleX(1);
+  transform-origin: left;
 }
 
 .primary-navigation .nav-link > [aria-hidden="true"] {
