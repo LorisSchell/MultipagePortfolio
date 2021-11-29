@@ -6,40 +6,61 @@
     <title>Portfolio | UEFA Champions League</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/table.css" />
     <script src="js/nav.js" defer></script>
   </head>
 
   <body>
     <header class="bg-blue text-center">
       <div class="container container--narrow">
-        <p>Loris Schell</p>
-        <h1>My Portfolio about the UEFA Champions League</h1>
+        <p>UEFA Champions League</p>
+        <h1>Standings Season 2021/22 Group Stage</h1>
       </div>
     </header>
 
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
       <span class="sr-only">Menu</span>
     </button>
 
-    <nav class="bg-nav">
-      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+    <nav>
+      <ul
+        id="primary-navigation"
+        data-visible="false"
+        class="primary-navigation flex"
+      >
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="index.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="index.html"
+          >
             <span aria-hidden="true">00</span>Home
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 active nav-link" href="table.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 active nav-link"
+            href="table.html"
+          >
             <span aria-hidden="true">01</span>Tables
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="stats.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="stats.html"
+          >
             <span aria-hidden="true">02</span>Stats
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="history.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="history.html"
+          >
             <span aria-hidden="true">03</span>History
           </a>
         </li>
@@ -47,139 +68,770 @@
     </nav>
 
     <div class="content">
-        <section class="section_transparent">
-            <div class="container-fluid"></div>
-        </section>
+      <section class="section_transparent">
+        <div class="container-fluid"></div>
+      </section>
 
-        <section>
-            <div class="container-fluid">
-                <div class="content">
-                    <header class="box-header">
-                        <h1 class="section-title big-headline"></h1>
-                        <div class="standings">
-                            <h3 class="groupname"></h3>
-                            <table class="table-standings">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </header>
-                </div>
-            </div>
-        </section>
+      <section>
+        <div class="standings--full">
+          <header class="content-header">
+            <h1 class="section-title big-headline">Groups</h1>
+          </header>
+
+          <!--Group A-->
+          <div class="box-standing">
+            <h3 class="groupname">Group A</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name">
+                    <a
+                      href="https://www.uefa.com/uefachampionsleague/clubs/52919--man-city/"
+                      class="table_team-name_block"
+                    >
+                    <div class="club-logo2">
+                        <span class="team-name">Man. City</span>
+                    </div>
+                      <img src="./images/ManCity.png" alt="Man. City" class="club-logo autosizes" />
+                      
+                    </a>
+                  </td>
+                  <td class="table_team-played">5</td>
+                  <td class="table_team-won">4</td>
+                  <td class="table_team-drawn">0</td>
+                  <td class="table_team-lost">1</td>
+                  <td class="table_team-for">17</td>
+                  <td class="table_team-against">8</td>
+                  <td class="table_team-goal-diff">9</td>
+                  <td class="table_team-points">
+                    <strong>12</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table_team-name">
+                    <a
+                      href="https://www.uefa.com/uefachampionsleague/clubs/52747--paris/"
+                      class="table_team-name_block"
+                    >
+                      <img src="./images/PSG.png" alt="PSG" class="club-logo autosizes" />
+                      <span class="team-name">PSG</span>
+                    
+                  </td>
+                  <td class="table_team-played">5</td>
+                  <td class="table_team-won">2</td>
+                  <td class="table_team-drawn">2</td>
+                  <td class="table_team-lost">1</td>
+                  <td class="table_team-for">9</td>
+                  <td class="table_team-against">7</td>
+                  <td class="table_team-goal-diff">2</td>
+                  <td class="table_team-points">
+                    <strong>8</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table_team-name">
+                    <a
+                      href="https://www.uefa.com/uefachampionsleague/clubs/2603790--leipzig/"
+                      class="table_team-name_block"
+                    >
+                      <img src="./images/Leipzig.svg" alt="Leipzig" class="club-logo autosizes" />
+                      <span class="team-name">Leipzig</span>
+                    </a>
+                  </td>
+                  <td class="table_team-played">5</td>
+                  <td class="table_team-won">1</td>
+                  <td class="table_team-drawn">1</td>
+                  <td class="table_team-lost">3</td>
+                  <td class="table_team-for">13</td>
+                  <td class="table_team-against">13</td>
+                  <td class="table_team-goal-diff">0</td>
+                  <td class="table_team-points">
+                    <strong>4</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table_team-name">
+                    <a
+                      href="https://www.uefa.com/uefachampionsleague/clubs/50043--club-brugge/"
+                      class="table_team-name_block"
+                    >
+                      <img src="./images/ClubBrugge.png" alt="Club Brugge" class="club-logo autosizes" />
+                      <span class="team-name">Club Brugge</span>
+                    </a>
+                  </td>
+                  <td class="table_team-played">5</td>
+                  <td class="table_team-won">1</td>
+                  <td class="table_team-drawn">1</td>
+                  <td class="table_team-lost">3</td>
+                  <td class="table_team-for">5</td>
+                  <td class="table_team-against">16</td>
+                  <td class="table_team-goal-diff">-11</td>
+                  <td class="table_team-points">
+                    <strong>4</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--Group B-->
+          <div class="box-standing">
+            <h3 class="groupname">Group B</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--Group C-->
+          <div class="box-standing">
+            <h3 class="groupname">Group C</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--Group D-->
+          <div class="box-standing">
+            <h3 class="groupname">Group D</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--Group E-->
+          <div class="box-standing">
+            <h3 class="groupname">Group E</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--Group F-->
+          <div class="box-standing">
+            <h3 class="groupname">Group F</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--Group G-->
+          <div class="box-standing">
+            <h3 class="groupname">Group G</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--Group H-->
+          <div class="box-standing">
+            <h3 class="groupname">Group H</h3>
+            <table class="table-standing">
+              <thead>
+                <tr>
+                  <th class="table_team-name"></th>
+                  <th class="table_team-played">
+                    <span class="label--big">Played</span>
+                    <span class="label--small">P</span>
+                  </th>
+                  <th class="table_team-won">
+                    <span class="label--big">Won</span>
+                    <span class="label--small">W</span>
+                  </th>
+                  <th class="table_team-drawn">
+                    <span class="label--big">Drawn</span>
+                    <span class="label--small">D</span>
+                  </th>
+                  <th class="table_team-lost">
+                    <span class="label--big">Lost</span>
+                    <span class="label--small">L</span>
+                  </th>
+                  <th class="table_team-for">
+                    <span class="label--big">For</span>
+                  </th>
+                  <th class="table_team-against">
+                    <span class="label--big">Against</span>
+                  </th>
+                  <th class="table_team-goal-diff">Goal difference</th>
+                  <th class="table_team-points">
+                    <span class="label--big">Points</span>
+                    <span class="label--small">Pts</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+                <tr>
+                  <td class="table_team-name"></td>
+                  <td class="table_team-played"></td>
+                  <td class="table_team-won"></td>
+                  <td class="table_team-drawn"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-lost"></td>
+                  <td class="table_team-for"></td>
+                  <td class="table_team-against"></td>
+                  <td class="table_team-goal-diff"></td>
+                  <td class="table_team-points"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Played</th>
-                <th>Won</th>
-                <th>Drawn</th>
-                <th>Lost</th>
-                <th>For</th>
-                <th>Against</th>
-                <th>Goal Difference</th>
-                <th>Points</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div class="col-club">
-                        <div class="col-club-img">
-                            <img><img/>
-                        </div>
-                        <div class="col-club-name">
-                            <p>ManCity</p>
-                        </div>
-                    </div>
-                </td>
-                <td>5</td>
-                <td>4</td>
-                <td>0</td>
-                <td>1</td>
-                <td>17</td>
-                <td>8</td>
-                <td>9</td>
-                <td><p class="points">12</p></td>
-            </tr>
-
-            <tr>
-                <td>
-                    <div class="col-club">
-                        <div class="col-club-img">
-                            <img><img/>
-                        </div>
-                        <div class="col-club-name">
-                            <p>PSG</p>
-                        </div>
-                    </div>
-                </td>
-                <td>5</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>9</td>
-                <td>7</td>
-                <td>2</td>
-                <td><p class="points">8</p></td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="col-club">
-                        <div class="col-club-img">
-                            <img><img/>
-                        </div>
-                        <div class="col-club-name">
-                            <p>RB Leipzig</p>
-                        </div>
-                    </div>
-                </td>
-                <td>5</td>
-                <td>1</td>
-                <td>1</td>
-                <td>3</td>
-                <td>13</td>
-                <td>13</td>
-                <td>0</td>
-                <td><p class="points">4</p></td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="col-club">
-                        <div class="col-club-img">
-                            <img><img/>
-                        </div>
-                        <div class="col-club-name">
-                            <p>Club Brugge</p>
-                        </div>
-                    </div>
-                </td>
-                <td>5</td>
-                <td>1</td>
-                <td>1</td>
-                <td>3</td>
-                <td>5</td>
-                <td>16</td>
-                <td>-11</td>
-                <td><p class="points">4</p></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br><br><br><br><br>
-
+    <br /><br /><br /><br /><br />
   </body>
 </html>
