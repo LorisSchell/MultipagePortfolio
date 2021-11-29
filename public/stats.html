@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | UEFA Champions League</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/nav.js" defer></script>
+  </head>
+
+  <body>
+    <header class="bg-blue text-center">
+      <div class="container container--narrow">
+        <p>Loris Schell</p>
+        <h1>My Portfolio about the UEFA Champions League</h1>
+      </div>
+    </header>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="bg-nav">
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li>
+          <a class="uppercase text-dark letter-spacing-2" href="index.html">
+            <span aria-hidden="true">00</span>Home
+          </a>
+        </li>
+        <li>
+          <a class="uppercase text-dark letter-spacing-2" href="table.html">
+            <span aria-hidden="true">01</span>Tables
+          </a>
+        </li>
+        <li>
+          <a class="uppercase text-dark letter-spacing-2 active" href="stats.html">
+            <span aria-hidden="true">02</span>Stats
+          </a>
+        </li>
+        <li>
+          <a class="uppercase text-dark letter-spacing-2" href="history.html">
+            <span aria-hidden="true">03</span>History
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <div class="container">
+        <h2 class="text-center">About</h2>
+        <div class="split">
+          <div>
+            <p class="text-justify">
+              The UEFA Champions League (abbreviated as UCL) is an annual club
+              football competition organised by the Union of European Football
+              Associations (UEFA) and contested by top-division European clubs,
+              deciding the competition winners through a round robin group stage
+              to qualify for a double-legged knockout format, and a single leg
+              final
+            </p>
+          </div>
+          <div>
+            <p class="text-justify">
+              It is one of the most prestigious football tournaments in the
+              world and the most prestigious club competition in European
+              football, played by the national league champions (and, for some
+              nations, one or more runners-up) of their national associations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>title</h2>
+            <p class="text-justify">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur neque veritatis eum distinctio enim explicabo?
+            </p>
+          </div>
+          <div>
+            <img src="./images/championsleague2.jpg" alt="UCL Theme" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient">
+      <div class="container">
+        <div class="split">
+          <div>
+            <img src="./images/trophy.jpg" alt="UCL Trophy" />
+          </div>
+          <div>
+            <h2>Trophy</h2>
+            <p class="text-justify">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur neque veritatis eum distinctio enim explicabo?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
