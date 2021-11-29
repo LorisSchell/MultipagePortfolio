@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | UEFA Champions League</title>
 
-    <link rel="stylesheet" href="css/champions.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/nav.js" defer></script>
   </head>
 
   <body>
@@ -15,29 +16,40 @@
         <h1>My Portfolio about the UEFA Champions League</h1>
       </div>
     </header>
-    
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
       <span class="sr-only">Menu</span>
     </button>
 
     <nav>
-      <ul id="primary-navigation" class="primary-navigation flex">
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
         <li class="active">
-          <a class="ff-sans-cond uppercase text-dark letter-spacing-2" href="index.html">
+          <a id="nav-item" class="uppercase text-dark letter-spacing-2" href="index.html">
             <span aria-hidden="true">00</span>Home
           </a>
+        </li>
+
         <li>
-          <a class="ff-sans-cond uppercase text-dark letter-spacing-2" href="table.html">
+          <a id="nav-item" class="uppercase text-dark letter-spacing-2" href="table.html">
             <span aria-hidden="true">01</span>Tables
           </a>
+        </li>
+
         <li>
-          <a class="ff-sans-cond uppercase text-dark letter-spacing-2" href="stats.html">
+          <a id="nav-item" class="uppercase text-dark letter-spacing-2" href="stats.html">
             <span aria-hidden="true">02</span>Stats
           </a>
+        </li>
+
         <li>
-          <a class="ff-sans-cond uppercase text-dark letter-spacing-2" href="history.html">
+          <a id="nav-item" class="uppercase text-dark letter-spacing-2" href="history.html">
             <span aria-hidden="true">03</span>History
           </a>
+        </li>
       </ul>
     </nav>
 

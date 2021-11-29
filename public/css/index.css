@@ -24,7 +24,7 @@
   --font-family-primary: "Segoe UI", Arial, sans-serif;
 }
 
-/* section boxes */
+/* Homepage Basic Design */
 
 *,
 *::before,
@@ -37,6 +37,9 @@ body {
   font-weight: 400;
   font-size: 1.3125rem;
   line-height: 1.6;
+  min-height: 100vh;
+
+  overflow-x: hidden;
 }
 
 body,
@@ -134,7 +137,7 @@ section {
     color: var(--clr-ucl-lightcyan)
 }
 
-/* primary header */
+/* primary navigation */
 
 .sr-only {
     clip: rect(0 0 0 0);
@@ -146,8 +149,16 @@ section {
     width: 1px;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .text-dark {
     color: var(--clr-ucl-darkblue);
+}
+
+.letter-spacing-2{
+    letter-spacing: 2px;
 }
 
 .flex {
@@ -169,13 +180,21 @@ section {
     padding: 0;
     margin: 0;
 
-    background: hsl(0 0% 0% / 0.75);
+    background: hsl(240 100% 15% / 1);
+}
+
+.primary-navigation .text-dark {
+    color: var(--clr-ucl-white);
 }
 
 @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
-        background: hsl(0 0% 100% / 0.1);
+       background: hsl(0 0% 100% / 0.1);
         backdrop-filter: blur(1rem);
+    }
+
+    .primary-navigation .text-dark {
+        color: var(--clr-ucl-darkblue);
     }
 }
 
@@ -198,7 +217,14 @@ section {
 
         flex-direction: column;
         padding: min(30vh, 10rem) 2em; 
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
     }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }  
 
     .mobile-nav-toggle {
         display: block;
