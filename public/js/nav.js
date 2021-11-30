@@ -12,3 +12,7 @@ navToggle.addEventListener("click", () => {
     navToggle.setAttribute("aria-expanded", false);
   }
 });
+
+function scrollToTop() {
+  window.scrollTo(0,0);
+}
