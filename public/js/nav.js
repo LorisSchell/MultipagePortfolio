@@ -13,6 +13,20 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-function scrollToTop() {
-  window.scrollTo(0,0);
+const goTopBtn = document.querySelector(".scrollTopBtn");
+
+window.addEventListener("scroll", checkHeight);
+
+function checkHeight() {
+  if (window.scrollY > 200) {
+    goTopBtn.style.display = "block";
+  } else {
+    goTopBtn.style.display = "none";
+  }
 }
+goTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

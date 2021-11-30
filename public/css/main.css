@@ -337,6 +337,7 @@ section {
     background-size: 40px;
     background-position: center;
     border: transparent;
+    display: block;
   }
 }
 
@@ -347,11 +348,4 @@ section {
       width: 55px;
       background-size: 35px;
   }
-
-  
-  }
-}
-
-@media (min-width: 35em) and (max-width: 55em) {
-  
 }
