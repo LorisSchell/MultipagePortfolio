@@ -6,112 +6,186 @@
     <title>Portfolio | UEFA Champions League</title>
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/carousel.css" />
     <script src="js/main.js" defer></script>
     <script src="js/carousel.js" defer></script>
   </head>
 
   <body>
-    <header class="bg-blue text-center">
+    <header class="bg-cyan text-center">
       <div class="container container--narrow">
         <p>Loris Schell</p>
         <h1>My Portfolio about the UEFA Champions League</h1>
       </div>
     </header>
 
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
       <span class="sr-only">Menu</span>
     </button>
 
     <nav>
-      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+      <ul
+        id="primary-navigation"
+        data-visible="false"
+        class="primary-navigation flex"
+      >
         <li>
-          <a class="uppercase text-dark letter-spacing-2 active nav-link" href="index.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 active nav-link"
+            href="index.html"
+          >
             <span aria-hidden="true">00</span>Home
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="table.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="table.html"
+          >
             <span aria-hidden="true">01</span>Tables
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="stats.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="stats.html"
+          >
             <span aria-hidden="true">02</span>Stats
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="history.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="history.html"
+          >
             <span aria-hidden="true">03</span>History
           </a>
         </li>
       </ul>
     </nav>
-    <hr class="nav-underline">
 
-    <section>
+    <section class="bg-light">
       <div class="container">
         <h2 class="text-center">About</h2>
+        <hr class="underline" />
         <div class="split">
           <div>
             <p class="text-justify">
-              The <b><abbr title="UEFA Champions League" tabindex="0">UCL</abbr></b> is an annual club football competition organised by the <span class="semi-bold"><i>Union of European Football Associations (UEFA)</i></span> and contested by top-division European clubs, deciding the competition winners through a round robin group stage to qualify for a double-legged knockout format, and a single leg final.
+              The
+              <b><abbr title="UEFA Champions League" tabindex="0">UCL</abbr></b>
+              is an annual club football competition organised by the
+              <span class="semi-bold"
+                ><i>Union of European Football Associations (UEFA)</i></span
+              >
+              and contested by top-division European clubs, deciding the
+              competition winners through a round robin group stage to qualify
+              for a double-legged knockout format, and a single leg final.
             </p>
           </div>
           <div>
             <p class="text-justify">
-              It is one of the most prestigious football tournaments in the world and <span class="bold">the most prestigious club competition in European football</span>, played by the national league champions (and, for some nations, one or more runners-up) of their national associations.
+              It is one of the most prestigious football tournaments in the
+              world and
+              <span class="bold"
+                >the most prestigious club competition in European
+                football</span
+              >, played by the national league champions (and, for some nations,
+              one or more runners-up) of their national associations.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-dark" style="background-color: rebeccapurple;">
-      <div class="container">
-        <div class="carousel">
-
-          <button class="carousel_button carousel_button--left" aria-label="Left">
-            <img src="images/slide-left.svg" alt="">
-          </button>
-
-          <div class="carousel_track-container">
-            <ul class="carousel_track">
-              <li class="carousel_slide current-slide">
-                <img class="carousel_image" src="images/championsleague.jpg" alt="">
-              </li>
-              <li class="carousel_slide">
-                <img class="carousel_image" src="images/championsleague.jpg" alt="">
-              </li>
-              <li class="carousel_slide">
-                <img class="carousel_image" src="images/championsleague.jpg" alt="">
-              </li>
-            </ul>
-          </div>
-
-          <button class="carousel_button carousel_button--right" aria-label="Right">
-            <img src="images/slide-right.svg" alt="">
-          </button>
-
-          <div class="carousel_nav">
-            <button class="carousel_indicator current-slide" aria-label="slide-indicator"></button>
-            <button class="carousel_indicator" aria-label="slide-indicator"></button>
-            <button class="carousel_indicator" aria-label="slide-indicator"></button>
-          </div>
-        </div>
+    <div class="slideshow-container">
+      <!--Slide 1-->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <video class="slideshow_item" autoplay playsinline muted loop>
+          <source
+            src="https://uclbranding.uefa.com/assets/video/starball-loop.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="slideshow_image-caption"></div>
       </div>
-    </section>
+
+      <!--Slide 2-->
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img class="slideshow_item" src="images/CR7.jpg" alt="" />
+        <div class="slideshow_item-caption">Cristiano Ronaldo bicycle kick</div>
+      </div>
+
+      <!--Slide 3-->
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img class="slideshow_item" src="images/Messi.jpg" alt="" />
+        <div class="slideshow_item-caption">Lionel Messi</div>
+      </div>
+
+      <!--Slide 4-->
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="slideshow_item" src="images/Liverpool-winner.jpg" alt="" />
+        <div class="slideshow_item-caption">UCL Champions of 2018/19</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="slideshow-nav">
+      <span class="nav-dot" onclick="currentSlide(1)"></span>
+      <span class="nav-dot" onclick="currentSlide(2)"></span>
+      <span class="nav-dot" onclick="currentSlide(3)"></span>
+      <span class="nav-dot" onclick="currentSlide(4)"></span>
+    </div>
 
     <section class="bg-dark">
       <div class="container">
+        <h2 class="text-center">UCL Anthem</h2>
+        <hr class="underline" />
         <div class="split">
           <div>
-            <h2>title</h2>
-            <hr>
             <p class="text-justify">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Aspernatur neque veritatis eum distinctio enim explicabo?
+              The UEFA Champions League Anthem, officially titled simply
+              "Champions League", is the official anthem of the UEFA Men's
+              Champions League, written by English composer Tony Britten in
+              1992, and based on George Frideric Handel's Zadok the Priest. It
+              was also the official anthem of the UEFA Women's Champions League
+              from its creation in 2001 to the 2021 creation of an independent
+              anthem. The complete anthem is about three minutes long, and has
+              two short verses and the chorus. The lyrics are in UEFA's three
+              official languages: English, French, and German.
             </p>
+          </div>
+          <div>
+            <p class="text-justify">
+              The chorus is set to the exclamations "Die Meister! Die Besten!
+              Les grandes équipes! The champions!". The anthem is played inside
+              the stadium before the start of each UEFA Champions League match,
+              in addition to the beginning and end of television broadcasts of
+              the games. Special vocal versions of the anthem have been
+              performed live at the UEFA Champions League Final. UEFA's official
+              website states, "the anthem is now almost as iconic as the
+              trophy."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="split">
+          <div class="container_split-audio">
+            <audio
+              class="ucl_anthem"
+              src="https://upload.wikimedia.org/wikipedia/en/2/2d/Champions_League_anthem.ogg"
+              controls
+            />
           </div>
           <div>
             <img src="./images/championsleague2.jpg" alt="UCL Theme" />
@@ -120,7 +194,7 @@
       </div>
     </section>
 
-    <section class="bg-gradient">
+    <section style="background-image: transparent">
       <div class="container">
         <div class="split">
           <div>
@@ -128,16 +202,36 @@
           </div>
           <div>
             <h2>Trophy</h2>
-            <hr>
+            <hr />
             <p class="text-justify">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Aspernatur neque veritatis eum distinctio enim explicabo?
+              The European Champion Clubs' Cup, also known as the Coupe des Clubs Champions Européens or simply the European Cup, is a trophy awarded annually by UEFA to the football club that wins the UEFA Champions League. In its former form, the competition bore the same name as the Cup and was also known as the European Cup before being renamed from the 1992/93 season. Several physical trophies bore this name, as a club was allowed to keep the trophy after five wins or three consecutive victories and a new trophy had to be forged for the following season. The original European Cup trophy was donated by the French sports newspaper L'Équipe. In March 1967, this trophy was permanently awarded to Real Madrid. At that time, Real Madrid was the reigning champion and had won a total of six titles, including the first five competitions from 1956 to 1960, making Celtic the first club to win the trophy in its current form in 1967.
             </p>
           </div>
         </div>
       </div>
     </section>
-    
-    <button class="scrollTopBtn transparent-look" aria-label="ScrollUp"></button>
+
+    <button
+      class="scrollTopBtn transparent-look"
+      aria-label="ScrollUp"
+    ></button>
+
+    <footer class="bg-footer"> <!--TODO: Footer social-media-->
+      <div class="footer-content">
+        <h3>Portfolio - Loris Schell</h3>
+        <p>
+          Course: WI20C | Student-ID: 3779830
+        </p>
+        <ul class="socials">
+          <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li> -->
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2021 Loris Schell. Designed by <span>Loris Schell</span></p>
+      </div>
+    </footer>
   </body>
 </html>
