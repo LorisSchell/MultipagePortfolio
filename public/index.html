@@ -6,7 +6,9 @@
     <title>Portfolio | UEFA Champions League</title>
 
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/nav.js" defer></script>
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/carousel.js" defer></script>
   </head>
 
   <body>
@@ -45,6 +47,7 @@
         </li>
       </ul>
     </nav>
+    <hr class="nav-underline">
 
     <section>
       <div class="container">
@@ -52,21 +55,48 @@
         <div class="split">
           <div>
             <p class="text-justify">
-              The UEFA Champions League (abbreviated as UCL) is an annual club
-              football competition organised by the Union of European Football
-              Associations (UEFA) and contested by top-division European clubs,
-              deciding the competition winners through a round robin group stage
-              to qualify for a double-legged knockout format, and a single leg
-              final
+              The <b><abbr title="UEFA Champions League" tabindex="0">UCL</abbr></b> is an annual club football competition organised by the <span class="semi-bold"><i>Union of European Football Associations (UEFA)</i></span> and contested by top-division European clubs, deciding the competition winners through a round robin group stage to qualify for a double-legged knockout format, and a single leg final.
             </p>
           </div>
           <div>
             <p class="text-justify">
-              It is one of the most prestigious football tournaments in the
-              world and the most prestigious club competition in European
-              football, played by the national league champions (and, for some
-              nations, one or more runners-up) of their national associations.
+              It is one of the most prestigious football tournaments in the world and <span class="bold">the most prestigious club competition in European football</span>, played by the national league champions (and, for some nations, one or more runners-up) of their national associations.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark" style="background-color: rebeccapurple;">
+      <div class="container">
+        <div class="carousel">
+
+          <button class="carousel_button carousel_button--left" aria-label="Left">
+            <img src="images/slide-left.svg" alt="">
+          </button>
+
+          <div class="carousel_track-container">
+            <ul class="carousel_track">
+              <li class="carousel_slide current-slide">
+                <img class="carousel_image" src="images/championsleague.jpg" alt="">
+              </li>
+              <li class="carousel_slide">
+                <img class="carousel_image" src="images/championsleague.jpg" alt="">
+              </li>
+              <li class="carousel_slide">
+                <img class="carousel_image" src="images/championsleague.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+
+          <button class="carousel_button carousel_button--right" aria-label="Right">
+            <img src="images/slide-right.svg" alt="">
+          </button>
+
+          <div class="carousel_nav">
+            <button class="carousel_indicator current-slide" aria-label="slide-indicator"></button>
+            <button class="carousel_indicator" aria-label="slide-indicator"></button>
+            <button class="carousel_indicator" aria-label="slide-indicator"></button>
           </div>
         </div>
       </div>
@@ -77,6 +107,7 @@
         <div class="split">
           <div>
             <h2>title</h2>
+            <hr>
             <p class="text-justify">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Aspernatur neque veritatis eum distinctio enim explicabo?
@@ -97,6 +128,7 @@
           </div>
           <div>
             <h2>Trophy</h2>
+            <hr>
             <p class="text-justify">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Aspernatur neque veritatis eum distinctio enim explicabo?

@@ -25,6 +25,11 @@
   );
 
   --font-family-primary: "Segoe UI", Arial, sans-serif;
+
+  --font-weight--light: 300;
+  --font-weight--regular: 400;
+  --font-weight--semibold: 500;
+  --font-weight--bold: 700;
 }
 
 /* Homepage Basic Design */
@@ -99,7 +104,7 @@ section {
     padding: 7rem 0;
   }
 
-  body > :nth-child(4) {
+  body > :nth-child(5) {
     padding: 3rem 0;
   }
 }
@@ -300,6 +305,10 @@ section {
     background-color: transparent;
     background-image: url(../images/icons8-löschen-24.png);
   }
+
+  .nav-underline {
+    display: none;
+  }
 }
 
 @media (min-width: 35em) and (max-width: 55em) {
@@ -314,6 +323,39 @@ section {
     padding-block: 2rem;
     padding-inline: clamp(3rem, 8vw, 10rem);
   }
+}
+
+/*Styling Tags*/
+
+abbr[title] {
+  position: relative;
+  text-decoration: underline dotted;
+}
+
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+  content: attr(title);
+
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: auto;
+  white-space: nowrap;
+
+  background-color: var(--clr-ucl-grey);
+  color: var(--clr-ucl-text);
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  padding: 3px 5px;
+}
+
+.semi-bold {
+  font-weight: var(--font-weight--semibold);
+}
+
+.bold {
+  font-weight: var(--font-weight--bold);
 }
 
 /*Scroll to Top Button*/
