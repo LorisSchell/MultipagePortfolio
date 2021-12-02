@@ -1,0 +1,204 @@
+:root {
+  --clr-ucl-darkblue: #00004b;
+  --clr-ucl-blue: #0d3aff;
+  --clr-ucl-white: #ffffff;
+  --clr-ucl-lightcyan: #5af7dc;
+  --clr-ucl-pink: #ff16ff;
+  --clr-ucl-grey: #c1c2d5;
+  --clr-ucl-text: #30316e;
+  --clr-ucl-background: #f1f3f8;
+
+  --clr-3clr-gradient: linear-gradient(
+    to left top,
+    #ff16ff,
+    #c91de1,
+    #961cc1,
+    #67169e,
+    #3b0e7b,
+    #2b2584,
+    #173589,
+    #00418c,
+    #0070b6,
+    #009ecf,
+    #00cbda,
+    #5af7dc
+  );
+
+  --font-family-primary: "Segoe UI", Arial, sans-serif;
+
+  --font-weight--light: 300;
+  --font-weight--regular: 400;
+  --font-weight--semibold: 500;
+  --font-weight--bold: 700;
+}
+
+/*grid layout*/
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding-inline: clamp(3rem, 8vw, 10rem);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.grid-center {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.margin-top {
+  margin-top: 3rem;
+}
+
+.content-header > h2 {
+  font-weight: var(--font-weight--bold);
+  margin-top: 3rem;
+}
+
+.content-header > h3 {
+  font-weight: var(--font-weight--semibold);
+  margin-top: 1rem;
+}
+
+.content-header {
+  grid-column: 1 / 4;
+}
+
+.container-club_titles {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+.container-club_wins {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
+
+.container-club_goals {
+  grid-column: 3 / 4;
+  grid-row: 3 / 5;
+}
+
+.container-most_matches {
+  grid-column: 1 / 2;
+  grid-row: 6 / 8;
+}
+
+.container-top_goalscorer {
+  grid-column: 2 / 3;
+  grid-row: 6 / 8;
+}
+
+.container-most_assists {
+  grid-column: 3 / 4;
+  grid-row: 6 / 8;
+}
+
+@media (max-width: 1340px) {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-inline: clamp(3rem, 8vw, 10rem);
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .content-header {
+    grid-column: 1 / 2;
+  }
+
+  .container-club_titles {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+  }
+
+  .container-club_wins {
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+  }
+
+  .container-club_goals {
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
+  }
+
+  .container-most_matches {
+    grid-column: 1 / 2;
+    grid-row: 11 / 13;
+  }
+
+  .container-top_goalscorer {
+    grid-column: 1 / 2;
+    grid-row: 13 / 15;
+  }
+
+  .container-most_assists {
+    grid-column: 1 / 2;
+    grid-row: 15 / 17;
+  }
+}
+
+/*card-layout*/
+
+.card {
+  border-radius: 4px;
+  padding: 2rem 0;
+  overflow: hidden;
+
+  background-color: var(--clr-ucl-white);
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.3);
+  color: var(--clr-ucl-darkblue);
+}
+
+.card ol {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 1.1rem;
+  padding-left: 4rem;
+  margin-bottom: 0;
+  font-weight: var(--font-weight--regular);
+}
+
+.card h3 {
+  padding-left: 2.2rem;
+  font-weight: var(--font-weight--semibold);
+}
+
+.card .list_item {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.list_item span {
+  font-weight: var(--font-weight--semibold);
+}
+
+.align-right {
+  text-align: right;
+  padding-right: 3rem;
+}
+
+.align-left {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+@media (max-width: 1340px) {
+  .align-right {
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .align-left {
+    text-align: left;
+    padding-left: .55rem;
+  }
+}
+
+.table_stats {
+  padding: 1rem;
+}
