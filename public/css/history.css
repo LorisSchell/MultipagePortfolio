@@ -38,6 +38,10 @@
   background-color: var(--clr-ucl-background);
 }
 
+.time-container h2 {
+  font-weight: var(--font-weight--semibold);
+}
+
 .timeline {
   position: relative;
   width: min(90%, 120.5rem);
@@ -49,7 +53,7 @@
   content: "";
   position: absolute;
   width: 6px;
-  height: 100% ;
+  height: 100%;
   background-color: var(--clr-ucl-white);
   bottom: 0;
   left: 50%;

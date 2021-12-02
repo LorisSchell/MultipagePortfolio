@@ -34,6 +34,11 @@
 
 /*grid layout*/
 
+.main-content {
+  background-color: var(--clr-ucl-background);
+  color:var(--clr-ucl-darkblue)
+}
+
 .content-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,6 +46,7 @@
   padding-inline: clamp(3rem, 8vw, 10rem);
   gap: 2rem;
   margin-bottom: 3.5rem;
+  padding-top: 3rem;
 }
 
 .grid-center {
@@ -55,7 +61,6 @@
 
 .content-header > h2 {
   font-weight: var(--font-weight--bold);
-  margin-top: 3rem;
 }
 
 .content-header > h3 {
@@ -140,6 +145,12 @@
     grid-column: 1 / 2;
     grid-row: 15 / 17;
   }
+}
+
+@media (min-width: 40em) {
+    .content-wrapper {
+        padding-top: 7rem;
+    }
 }
 
 /*card-layout*/
