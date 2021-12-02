@@ -32,6 +32,11 @@
   --font-weight--bold: 700;
 }
 
+::selection {
+  background-color: var(--clr-ucl-darkblue);
+  color: var(--clr-ucl-white);
+}
+
 /* Homepage Basic Design */
 
 *,
@@ -124,7 +129,7 @@ section {
 .container_split-audio {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .ucl_anthem {
@@ -152,8 +157,101 @@ section {
   }
 }
 
+@media (max-width: 1500px) and (min-width: 620px) {
+  .container .split.split-trophy {
+    flex-direction: column;
+  }
+
+  .container .split.split-trophy > * {
+    margin: 0;
+  }
+
+  .container .split.split-trophy > :first-child {
+    margin-bottom: 2em;
+  }
+
+}
+
 .container--narrow {
   max-width: 34rem;
+}
+
+/*quote*/
+
+.quotes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.quotes > * {
+  flex-basis: 100%;
+}
+
+.quotes > *:not(:last-child) {
+  margin-right: 2em;
+}
+
+.quote {
+  background-color: var(--clr-ucl-white);
+  color: var(--clr-ucl-text);
+  overflow: hidden;
+
+  transition: 0.5s;
+  z-index: 2;
+  padding: 30px;
+
+  box-shadow: -10px 25px 50px rgba(255 255 255 / 0.3);
+}
+
+.quote > q {
+  display: block;
+  min-height: min(70%, 120.5rem);
+}
+
+.quotes .quote > h2 {
+  color: var(--clr-ucl-text);
+  font-weight: var(--font-weight--bold);
+  padding-top: 3rem;
+  margin: 0;
+}
+
+.quote:hover {
+  box-shadow: -20px 50px 100px rgba(255 255 255 / 0.5);
+}
+
+@media (max-width: 998px) {
+  .quotes {
+    flex-direction: column;
+  }
+  .quotes > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+  }
+}
+
+/*tweet*/
+
+.wrapper-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em 0 0 0;
+}
+
+.wrapper-tweet > * {
+  flex-basis: 100%;
+}
+
+.iframe-twitter {
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .wrapper-tweet {
+    overflow: scroll;
+  }
 }
 
 /*footer*/
@@ -161,7 +259,7 @@ section {
 footer {
   background: var(--clr-ucl-darkblue);
   color: var(--clr-ucl-white);
-  
+
   padding-top: 40px;
   width: 100vw;
   height: auto;
@@ -174,7 +272,6 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  
 }
 
 .footer-content h3 {
@@ -192,6 +289,10 @@ footer {
   font-size: 14px;
 }
 
+.footer-highlighted {
+  color: orange;
+}
+
 .footer-bottom {
   background: var(--clr-ucl-text);
   width: 100vw;
@@ -206,8 +307,8 @@ footer {
   margin-bottom: 0;
 }
 
-.footer-bottom span {
-  opacity: .4;
+.footer-bottom code {
+  opacity: 0.4;
   font-weight: 200;
 }
 
@@ -488,7 +589,7 @@ abbr[title]:focus::after {
   }
 }
 
-/*Fade-in content*/
+/*Fade-in content FIXME: deletion if not used*/ 
 
 .fade-in {
   opacity: 0;

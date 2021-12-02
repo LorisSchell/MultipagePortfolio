@@ -40,7 +40,7 @@
 }
 
 body {
-  background-color: var(--clr-ucl-background);
+  background-color: var(--clr-ucl-white);
   color: var(--clr-ucl-darkblue);
   line-height: 1;
 }
@@ -54,7 +54,11 @@ header.content-header {
   padding-bottom: 4.5rem;
 }
 
-.grid-box {
+.wrapper-bg-clr-gray {
+  background: var(--clr-ucl-background);
+}
+
+.content-box {
   margin: auto;
   width: 83%;
   max-width: 100em;
@@ -62,8 +66,8 @@ header.content-header {
   padding: 0.01em 16px;
 }
 
-.grid-box:before,
-.grid-box:after {
+.content-box:before,
+.content-box:after {
   content: "";
   display: table;
 }

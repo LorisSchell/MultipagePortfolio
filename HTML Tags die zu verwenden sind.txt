@@ -1,33 +1,39 @@
+Benutzt:
+-----------
 section
-article
 header
-footer
 nav
-
 h1-h6
 p
 ul/ol
 li
 img / figure
-hr
 div
-
-abbr 	Abkürzung
-b 	bold
-i 	kursiv
-code 
-q 	quote
 span 	allg.Textelement
-sub 	tiefgestellt
-sup 	hochgestellt
-time
-
 table
 tr
 td
 th
-
 a
+hr
+abbr 	Abkürzung
+b 	bold
+i 	kursiv
+source
+video
+audio 
+footer
+code 
+
+
+nicht benutzt:
+----------------
+
+q 	quote
+sub 	tiefgestellt
+sup 	hochgestellt
+time
+
 iframe
 
 form
@@ -36,9 +42,17 @@ textarea
 select
 option
 datalist
-audio 
-source
-video
+
+
+
+article
+
+
+
+
+
+
+
 
 
 background-image: linear-gradient(to right bottom, #00004b, #010a69, #061489, #0c1fab, #0f2ace, #3e2edf, #5d31ef, #7834ff, #a02eff, #c327ff, #e21fff, #ff16ff);
