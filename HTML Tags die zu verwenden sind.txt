@@ -9,45 +9,76 @@ ul/ol
 li
 img / figure
 div
-span 	allg.Textelement
+span
 table
 tr
 td
 th
 a
 hr
-abbr 	Abkürzung
-b 	bold
-i 	kursiv
+abbr 	
+b 	
+i 	
 source
 video
 audio 
 footer
 code 
+q
+article
+grid
 
 
 nicht benutzt:
 ----------------
 
-q 	quote
 sub 	tiefgestellt
 sup 	hochgestellt
 time
 
-iframe
+iframe ?
 
-form
-input
-textarea
+input type text name= surname size 25 maxlength 50
+
+input type text name= lastname size 25 maxlength 50
+
+textarea name=comment cols 20 rows 4
+
+select name ... size ...
+	option A
+	option B
+	option C
 select
-option
+
+input type text name residence size 40 list residencelist
+datalist id residencelist
+	option value mosbach
+	option value xy
+	option value z
 datalist
 
+input type radio name place value mosbach checked
+input type radio name place value bad_mergentheim
+input type radio name place value stuttgart
 
+input type checkbox name place value mosbah checked
+input type checkbox name place value bad_mergentheim 
+input type checkbox name place value stuttgart
 
-article
+input type submit name send_button value absenden 
+input type image name img_button src logo.png width heigth
+input type reset  name del_button value löschen 
 
+form enctype multipart/form-data name pic action "" method post
+	input type file name user_pic accept image/*
+form
 
+eingabeprüfung 
+	type date required
+	type email required 
+	pattern [0-9]{5}
+	pattern [0-9]{3,5}[/][0-9]{5,9}
+	type submit
 
 
 
