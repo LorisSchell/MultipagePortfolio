@@ -588,23 +588,3 @@ abbr[title]:focus::after {
     background-size: 35px;
   }
 }
-
-/*Fade-in content FIXME: deletion if not used*/ 
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-}
-
-.from-right {
-}
-
-.from-left {
-}
-
-.from-bottom {
-}

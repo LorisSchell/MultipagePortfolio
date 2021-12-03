@@ -1,4 +1,3 @@
-
 // toggle-mobile-navigation
 
 const primaryNav = document.querySelector(".primary-navigation");
@@ -18,7 +17,7 @@ navToggle.addEventListener("click", () => {
 
 // scroll-up-button
 
-const goTopBtn = document.querySelector('.scrollTopBtn');
+const goTopBtn = document.querySelector(".scrollTopBtn");
 
 window.addEventListener("scroll", checkHeight);
 
@@ -36,29 +35,12 @@ goTopBtn.addEventListener("click", () => {
   });
 });
 
-// fade-in animation
+// login Form
 
-const faders = document.querySelectorAll(".fade-in");
+function onLogin(form) {
+  console.log("test login");
+}
 
-const appearOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px -100px 0px",
-};
-const appearOnScroll = new IntersectionObserver(function (
-  entries,
-  appearOnScroll
-) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add("appear");
-      appearOnScroll.unobserve(entry.target);
-    }
-  });
-},
-appearOptions);
-
-faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
-});
+function onSignUp(form) {
+  console.log("test signup")
+}

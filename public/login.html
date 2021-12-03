@@ -18,57 +18,128 @@
       </div>
     </header>
 
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
       <span class="sr-only">Menu</span>
     </button>
 
     <nav>
-      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+      <ul
+        id="primary-navigation"
+        data-visible="false"
+        class="primary-navigation flex"
+      >
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="index.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="index.html"
+          >
             <span aria-hidden="true">00</span>Home
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="table.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="table.html"
+          >
             <span aria-hidden="true">01</span>Tables
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="stats.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="stats.html"
+          >
             <span aria-hidden="true">02</span>Stats
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 nav-link" href="history.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 nav-link"
+            href="history.html"
+          >
             <span aria-hidden="true">03</span>History
           </a>
         </li>
         <li>
-          <a class="uppercase text-dark letter-spacing-2 active nav-link" href="login.html">
+          <a
+            class="uppercase text-dark letter-spacing-2 active nav-link"
+            href="login.html"
+          >
             <span aria-hidden="true">04</span>Login
           </a>
         </li>
       </ul>
     </nav>
 
-    <div class="content-wrapper">
-        <button class="btn info">Info</button>
+    <!-- <div class="content-wrapper"> -->
+      <!-- <button class="btn info">Info</button> -->
+      <!-- <div class="container-card"> 
+        <div class="card">
+          <div class="card-login" aria-hidden="false">
+            <h3>Login</h3>
+            <hr>
+            <form onsubmit="onLogin(this)">
+                <div class="input">
+                  <div class="input-text">
+                    <span>Username :</span>
+                  </div>
+                  <div class="input-email">
+                    <input type="email" name="username" value="" title="e-mail"/>
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="input-text">
+                    <span>Password :</span>
+                  </div>
+                  <div class="input-password">
+                    <input type="password" name="password" value="" title="password"/>
+                  </div>
+                </div>
+            
+              <button type="submit" value="Login">Login</button>
+            </form>
+          </div>
+          <div class="card-sign_up" aria-hidden="true">
+            <h3>Sign-Up</h3>
+            <form onsubmit="onSignUp(this)"></form>
+          </div>
+        </div>
+      </div> -->
+    
+      <div class="container-card"> 
+      
+      <form onsubmit="onLogin(this)" class="card">
+        <h1 class="letter-spacing-2">Login</h1>
+        <input type="text" name="" placeholder="Username">
+        <input type="password" name="" placeholder="Password">
+        <input type="submit" name="" value="Login">
+      </form>
+
     </div>
 
-    <button class="scrollTopBtn transparent-look" aria-label="ScrollUp"></button>
+    <button
+      class="scrollTopBtn transparent-look"
+      aria-label="ScrollUp"
+    ></button>
 
     <footer class="bg-footer">
       <div class="footer-content">
         <h3>Portfolio - Loris Schell</h3>
         <p>
-          <span class="footer-highlighted">Course:</span> WI20C | <span class="footer-highlighted">Student-ID:</span> 3779830
+          <span class="footer-highlighted">Course:</span> WI20C |
+          <span class="footer-highlighted">Student-ID:</span> 3779830
         </p>
       </div>
       <div class="footer-bottom">
-        <p>Copyright &copy;2021 Loris Schell. Designed by <code>Loris Schell</code></p>
+        <p>
+          Copyright &copy;2021 Loris Schell. Designed by
+          <code>Loris Schell</code>
+        </p>
       </div>
     </footer>
-
   </body>
 </html>

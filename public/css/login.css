@@ -32,26 +32,218 @@
   --font-weight--bold: 700;
 }
 
-/*grid layout*/
+/*login / sign-up form*/
 
-.content-wrapper {
-    display: -ms-grid;
-    display: grid;
+.container-card {
+  width: 100%;
+  height: 100vh;
+
+  color: var(--clr-ucl-darkblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/*
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-ucl-darkblue);
+  color: var(--clr-ucl-white);
+  width: 100%;
+  max-width: 1000px;
+  height: 65vh;
+  margin: 0 5rem;
+  box-shadow: 0 0 40px 20px rgba(90 247 220 / 0.75);
+}
+
+.card h3 {
+  font-weight: var(--font-weight--bold);
+  color: var(--clr-ucl-lightcyan);
+  font-size: 2.7rem;
+
+  width: 100%;
+  padding: 0 5rem;
+  margin: 0.5em;
+}
+
+.card hr {
+  width: calc(100% - 10rem);
+  margin-bottom: 1.5em;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 5rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+form > :last-child {
+  margin-top: 2.5rem;
+}
+
+.input .input-text {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  width: 25%;
+  height: auto;
+}
+
+.input-email,
+.input-password {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  height: auto;
+}
+
+.input-email input,
+.input-password input {
+  width: 100%;
+}
+
+.card > div[aria-hidden="true"] {
+  display: none;
+}
+
+.card-login,
+.card-sign_up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) and (min-width: 740px) {
+  form > :last-child {
+    margin-top: 2rem;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .input .input-text {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    width: 25%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 740px) {
+
+}
+*/
 
 /*Info-Button*/
 
 .btn {
-  border: none; 
-  color: white; 
-  padding: 14px 28px; 
+  border: none;
+  color: white;
+  padding: 14px 28px;
   cursor: pointer;
 }
 
 .info {
-    background-color: #2196F3;
-} 
+  background-color: #2196f3;
+}
 
 .info:hover {
-    background: #0b7dda;
+  background: #0b7dda;
+}
+
+/*animated login*/
+
+input::-webkit-input-placeholder {
+  color: var(--clr-ucl-white);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/css-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1000px;
+  height: 65vh;
+  margin: 0 5rem;
+  box-shadow: 0 0 40px 20px rgba(90 247 220 / 0.75);
+}
+
+.card h1 {
+  color: var(--clr-ucl-darkblue);
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: var(--font-weight--semibold);
+}
+
+.card input[type="text"],
+.card input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  border: 2px solid var(--clr-ucl-lightcyan);
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+
+  margin: 20px;
+  text-align: center;
+  padding: 14px 10px;
+  width: 20%;
+
+  color: var(--clr-ucl-darkblue);
+}
+
+.card input[type="text"]:focus,
+.card input[type="password"]:focus {
+  width: 50%;
+  border-color: var(--clr-ucl-darkblue);
+}
+
+.card input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid var(--clr-ucl-darkblue);
+  padding: 14px 40px;
+  outline: none;
+  color: var(--clr-ucl-darkblue);
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.card input[type="submit"]:hover {
+  background: var(--clr-ucl-darkblue);
+  color: var(--clr-ucl-white);
 }
