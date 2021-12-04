@@ -42,28 +42,40 @@ function onLogin(form) {
 }
 
 function onSignUp(form) {
-  console.log("test signup")
+  console.log("test signup");
 }
 
-function switchForm() {
+function switchFormToLogin() {
+  var logInForm = document.querySelector(".form-login");
+  var signUpForm = document.querySelector(".form-sign_up");
+  
+  logInForm.setAttribute("data-visible", true);
+  signUpForm.setAttribute("data-visible", false);
+}
 
+function switchFormToSignUp() {
+  var logInForm = document.querySelector(".form-login");
+  var signUpForm = document.querySelector(".form-sign_up");
+
+  logInForm.setAttribute("data-visible", false);
+  signUpForm.setAttribute("data-visible", true);
 }
 
 //validation for datalist
 
 var inputs = document.querySelectorAll("input[list]");
 for (var i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener("change", function() {
+  inputs[i].addEventListener("change", function () {
     var optionFound = false,
       datalist = this.list;
- 
+
     for (var j = 0; j < datalist.options.length; j++) {
-        if (this.value == datalist.options[j].value) {
-            optionFound = true;
-            break;
-        }
+      if (this.value == datalist.options[j].value) {
+        optionFound = true;
+        break;
+      }
     }
-    
+
     if (optionFound) {
       this.setCustomValidity("");
     } else {
