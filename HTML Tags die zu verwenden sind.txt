@@ -27,28 +27,7 @@ code
 q
 article
 grid
-
-
-nicht benutzt:
-----------------
-
-sub 	tiefgestellt
-sup 	hochgestellt
-time
-
-iframe ?
-
-input type text name= surname size 25 maxlength 50
-
-input type text name= lastname size 25 maxlength 50
-
-textarea name=comment cols 20 rows 4
-
-select name ... size ...
-	option A
-	option B
-	option C
-select
+input type text
 
 input type text name residence size 40 list residencelist
 datalist id residencelist
@@ -65,9 +44,26 @@ input type checkbox name place value mosbah checked
 input type checkbox name place value bad_mergentheim 
 input type checkbox name place value stuttgart
 
+
 input type submit name send_button value absenden 
-input type image name img_button src logo.png width heigth
 input type reset  name del_button value löschen 
+
+nicht benutzt:
+----------------
+
+sub 	tiefgestellt
+sup 	hochgestellt
+time
+
+iframe ?
+
+textarea name=comment cols 20 rows 4
+
+select name ... size ...
+	option A
+	option B
+	option C
+select
 
 form enctype multipart/form-data name pic action "" method post
 	input type file name user_pic accept image/*

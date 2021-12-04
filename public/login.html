@@ -19,6 +19,7 @@
     </header>
 
     <button
+      type="button"
       class="mobile-nav-toggle"
       aria-controls="primary-navigation"
       aria-expanded="false"
@@ -75,53 +76,118 @@
       </ul>
     </nav>
 
-    <!-- <div class="content-wrapper"> -->
-      <!-- <button class="btn info">Info</button> -->
-      <!-- <div class="container-card"> 
-        <div class="card">
-          <div class="card-login" aria-hidden="false">
-            <h3>Login</h3>
-            <hr>
-            <form onsubmit="onLogin(this)">
-                <div class="input">
-                  <div class="input-text">
-                    <span>Username :</span>
-                  </div>
-                  <div class="input-email">
-                    <input type="email" name="username" value="" title="e-mail"/>
-                  </div>
-                </div>
-                <div class="input">
-                  <div class="input-text">
-                    <span>Password :</span>
-                  </div>
-                  <div class="input-password">
-                    <input type="password" name="password" value="" title="password"/>
-                  </div>
-                </div>
-            
-              <button type="submit" value="Login">Login</button>
-            </form>
+    <div class="content">
+      <div class="container-card">
+        
+        <!--Login-->
+        <form onsubmit="onLogin(this)" class="card form-login" data-visible="true">
+          <div class="form-top">
+            <h1 class="letter-spacing-2">Login</h1>
           </div>
-          <div class="card-sign_up" aria-hidden="true">
-            <h3>Sign-Up</h3>
-            <form onsubmit="onSignUp(this)"></form>
-          </div>
-        </div>
-      </div> -->
-    
-      <div class="container-card"> 
-      
-      <form onsubmit="onLogin(this)" class="card">
-        <h1 class="letter-spacing-2">Login</h1>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
-        <input type="submit" name="" value="Login">
-      </form>
 
+          <div class="form-middle">
+            <input type="text" name="email" placeholder="E-Mail" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <div class="actions">
+              <input type="submit" name="submit" value="Login" />
+              <input type="reset" name="" value="Reset"/>
+            </div>
+          </div>
+          
+          <div class="form-bottom">
+            <label class="checkbox" for="RememberMe">
+              <input
+                class="checkbox_input"
+                type="checkbox"
+                name="RememberMe"
+                id="RememberMe"
+              />
+              <div class="checkbox_box"></div>
+              <span class="label-text">Remember Me</span>
+            </label>
+            <button type="button" class="card-switch" onclick="switchForm()">I'm New Here</button>
+          </div>
+        </form>
+
+        <!--Sign-Up-->
+        <form onsubmit="onSignUp(this)" class="card form-sign_up" data-visible="false">
+          <div class="form-top">
+            <h1 class="letter-spacing-2">Sign Up</h1>
+          </div>
+
+          <div class="form-middle">
+            <div class="gender">
+              <label for="gender-male" class="radio">
+                <input type="radio" name="gender" id="gender-male" class="radio_input" checked>
+                <div class="radio_radio"></div>
+                male
+              </label>
+              <label for="gender-female" class="radio">
+                <input type="radio" name="gender" id="gender-female" class="radio_input">
+                <div class="radio_radio"></div>
+                female
+              </label>
+              <label for="gender-divers" class="radio">
+                <input type="radio" name="gender" id="gender-divers" class="radio_input">
+                <div class="radio_radio"></div>
+                divers
+              </label>
+            </div>
+            <input type="text" name="" placeholder="Firstname" required/>
+            <input type="text" name="" placeholder="Lastname" required />
+            <input type="text" name="" placeholder="E-Mail" required/>
+            <input type="password" name="" placeholder="Password" required/>
+            <input type="text" name="" placeholder="Your favourite club" list="clubs">
+            <datalist id="clubs">
+              <option value="Man. City"></option>
+              <option value="PSG"></option>
+              <option value="Leipzig"></option>
+              <option value="Club Brugge"></option>
+              <option value="Liverpool"></option>
+              <option value="Porto"></option>
+              <option value="Milan"></option>
+              <option value="Atletico"></option>
+              <option value="Ajax"></option>
+              <option value="Sporting CP"></option>
+              <option value="Dortmund"></option>
+              <option value="Besiktas"></option>
+              <option value="Real Madrid"></option>
+              <option value="Inter"></option>
+              <option value="Sheriff"></option>
+              <option value="Shaktar Donetsk"></option>
+              <option value="Bayern"></option>
+              <option value="Barcelona"></option>
+              <option value="Benfica"></option>
+              <option value="Dynamo Kyiv"></option>
+              <option value="Man. United"></option>
+              <option value="Villarreal"></option>
+              <option value="Atalanta"></option>
+              <option value="Young Boys"></option>
+              <option value="LOSC"></option>
+              <option value="Salzburg"></option>
+              <option value="Sevilla"></option>
+              <option value="Wolfsburg"></option>
+              <option value="Chelsea"></option>
+              <option value="Juventus"></option>
+              <option value="Zenit"></option>
+              <option value="Malmö"></option>
+            </datalist>
+            <div class="actions">
+              <input type="submit" name="" value="Sign-Up"/>
+              <input type="reset" name="" value="Reset"/>
+            </div>
+          </div>
+
+          <div class="form-bottom">
+            <button type="button" class="card-switch" onclick="switchForm()">Already have an account</button>
+          </div>
+        </form>
+
+      </div>
     </div>
 
     <button
+      type="button"
       class="scrollTopBtn transparent-look"
       aria-label="ScrollUp"
     ></button>
