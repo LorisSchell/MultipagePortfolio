@@ -48,6 +48,13 @@ input type checkbox name place value stuttgart
 input type submit name send_button value absenden 
 input type reset  name del_button value löschen 
 
+eingabeprüfung 
+	type date required
+	type email required 
+	pattern [0-9]{5}
+	pattern [0-9]{3,5}[/][0-9]{5,9}
+	type submit
+
 nicht benutzt:
 ----------------
 
@@ -69,12 +76,7 @@ form enctype multipart/form-data name pic action "" method post
 	input type file name user_pic accept image/*
 form
 
-eingabeprüfung 
-	type date required
-	type email required 
-	pattern [0-9]{5}
-	pattern [0-9]{3,5}[/][0-9]{5,9}
-	type submit
+
 
 
 

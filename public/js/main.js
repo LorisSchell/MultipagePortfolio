@@ -35,7 +35,7 @@ goTopBtn.addEventListener("click", () => {
   });
 });
 
-// login Form
+// login Form / sign-up Form
 
 function onLogin(form) {
   var logInData = {};
