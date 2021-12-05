@@ -66,6 +66,7 @@
   padding: 1em;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .info-symbol::after {
@@ -103,8 +104,6 @@
   .disclaimer p {
     padding-top: 0;
   }
-
-
 }
 
 /*login / sign-up form*/
