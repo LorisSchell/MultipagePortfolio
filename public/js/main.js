@@ -78,6 +78,28 @@ function switchFormToSignUp() {
   signUpForm.setAttribute("data-visible", true);
 }
 
+//disclaimer
+
+// toggle-mobile-navigation
+
+const infoText = document.querySelector(".info-text");
+const infoToggle = document.querySelector(".info-symbol");
+const disclaimer = document.querySelector(".disclaimer");
+
+infoToggle.addEventListener("click", () => {
+  const visibility = infoText.getAttribute("data-visible");
+
+  if (visibility === "false") {
+    infoText.setAttribute("data-visible", true);
+    infoToggle.setAttribute("aria-expanded", true);
+    disclaimer.setAttribute("aria-expanded", true);
+  } else if (visibility === "true") {
+    infoText.setAttribute("data-visible", false);
+    infoToggle.setAttribute("aria-expanded", false);
+    disclaimer.setAttribute("aria-expanded", false);
+  }
+});
+
 //validation for datalist
 
 var inputs = document.querySelectorAll("input[list]");

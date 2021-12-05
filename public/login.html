@@ -77,8 +77,27 @@
     </nav>
 
     <div class="content">
+
+      <div class="disclaimer" aria-expanded="false">
+        <div>
+          <button 
+          type="button" 
+          class="info-symbol"
+          aria-expanded="false"
+          >
+      <span class="sr-only">Menu</span>
+    </button>
+            <span class="sr-only">Disclaimer</span>
+          </button>
+        </div>
+        <div class="info-text" data-visible="false">
+          <p>
+            <span>Attention:</span> This login/sign-up form does not reflect a real login or registration! It only serves the purpose to meet the portfolio task and log an HTML form via JS into the console.
+          </p>
+        </div>
+      </div>
+
       <div class="container-card">
-        
         <!--Login-->
         <form onsubmit="onLogin(this)" class="card form-login" data-visible="true">
           <div class="form-top">
