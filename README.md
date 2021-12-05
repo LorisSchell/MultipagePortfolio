@@ -3,4 +3,4 @@
  Student: Loris Schell
  Dozent: Sven Langenecker
 
-gitHub-repo: 
+gitHub-repo: https://github.com/LorisSchell/MultipagePortfolio.git
