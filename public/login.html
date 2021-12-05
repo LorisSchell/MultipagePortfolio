@@ -86,7 +86,7 @@
           </div>
 
           <div class="form-middle">
-            <input type="text" name="email" placeholder="E-Mail" required />
+            <input type="text" name="email" placeholder="E-Mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
             <input type="password" name="password" placeholder="Password" required />
             <div class="actions">
               <input type="submit" name="submit" value="Login" />
@@ -118,26 +118,26 @@
           <div class="form-middle">
             <div class="gender">
               <label for="gender-male" class="radio">
-                <input type="radio" name="gender" id="gender-male" class="radio_input" checked>
+                <input type="radio" name="gender" value="male" id="gender-male" class="radio_input" checked>
                 <div class="radio_radio"></div>
                 male
               </label>
               <label for="gender-female" class="radio">
-                <input type="radio" name="gender" id="gender-female" class="radio_input">
+                <input type="radio" name="gender" value="female" id="gender-female" class="radio_input">
                 <div class="radio_radio"></div>
                 female
               </label>
               <label for="gender-divers" class="radio">
-                <input type="radio" name="gender" id="gender-divers" class="radio_input">
+                <input type="radio" name="gender" value="divers" id="gender-divers" class="radio_input">
                 <div class="radio_radio"></div>
                 divers
               </label>
             </div>
-            <input type="text" name="" placeholder="Firstname" required/>
-            <input type="text" name="" placeholder="Lastname" required />
-            <input type="text" name="" placeholder="E-Mail" required/>
-            <input type="password" name="" placeholder="Password" required/>
-            <input type="text" name="" placeholder="Your favourite club" list="clubs">
+            <input type="text" name="firstname" placeholder="Firstname" required/>
+            <input type="text" name="lastname" placeholder="Lastname" required />
+            <input type="text" name="email" placeholder="E-Mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+            <input type="password" name="password" placeholder="Password" required/>
+            <input type="text" name="fav_club" placeholder="Your favourite club" list="clubs">
             <datalist id="clubs">
               <option value="Man. City"></option>
               <option value="PSG"></option>

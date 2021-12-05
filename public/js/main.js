@@ -38,17 +38,34 @@ goTopBtn.addEventListener("click", () => {
 // login Form
 
 function onLogin(form) {
-  console.log("test login");
+  var logInData = {};
+  var logInForm = document.querySelector(".form-login");
+  logInData.email = logInForm.email.value;
+  logInData.password = logInForm.password.value;
+  logInData.rememberMe = logInForm.RememberMe.checked;
+  console.log(JSON.stringify(logInData, null, 1));
 }
 
 function onSignUp(form) {
-  console.log("test signup");
+  var signUpData = {};
+  var signUpForm = document.querySelector(".form-sign_up");
+  var gender = document.getElementsByName("gender");
+
+  for (i = 0; i < gender.length; i++) {
+    if (gender[i].checked) signUpData.gender = gender[i].value;
+  }
+  signUpData.firstname = signUpForm.firstname.value;
+  signUpData.lastname = signUpForm.lastname.value;
+  signUpData.email = signUpForm.email.value;
+  signUpData.password = signUpForm.password.value;
+  signUpData.fav_club = signUpForm.fav_club.value;
+  console.log(JSON.stringify(signUpData, null, 1));
 }
 
 function switchFormToLogin() {
   var logInForm = document.querySelector(".form-login");
   var signUpForm = document.querySelector(".form-sign_up");
-  
+
   logInForm.setAttribute("data-visible", true);
   signUpForm.setAttribute("data-visible", false);
 }
